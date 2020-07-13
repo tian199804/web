@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            width: 250px;
+            height: 250px;
+            float: left;
+        }
+
+       
+         .container{
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin: 0 auto;
+
+            
+           
+            } 
+         .pic{
+                width: 1000px;
+                height: 250px;
+                animation: photo 5s linear infinite ;
+            }
+             @keyframes photo {
+                0% {
+                    
+                }
+                25% {
+                    margin-left: -250px; 
+                     /* transform: translateX(-250px); */
+                }
+                50% {
+                     margin-left: -500px; 
+                    /* transform: translateX(-500px); */
+                }
+                75% {
+                    /* transform: translateX(-750px);  */
+                    margin-left: -750px;
+                }
+
+                100% {
+                    /* transform: translateX(-1000px); */
+                    margin-left: -1000px;
+                } 
+                }
+
+    </style>
+
+</head>
+<body>
+    <div class='container'>
+        <div class='pic'>
+   <img src="http://pic1.win4000.com/pic/6/4b/57844c0934.jpg" alt="" class='img'>
+   <img src="http://pic1.win4000.com/pic/6/4b/60a97d42fb.jpg" alt="" class='img'>
+   <img src="http://pic1.win4000.com/pic/6/4b/1dd8c0d827.jpg" alt="" class='img'>
+   <img src="http://pic1.win4000.com/pic/6/4b/1dd8c0d827.jpg" alt="" class='img'>
+    </div>
+</div>
+</body>
