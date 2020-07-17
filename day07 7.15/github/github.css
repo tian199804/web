@@ -149,7 +149,7 @@ float: left;
   }
   .left{
       width: 333px;
-      height: 100vh;
+      height: 800px;
       float: left;
       border: none;
       padding-left: 24px;
@@ -157,6 +157,7 @@ float: left;
       border-right: 1px solid #e1e4e8;
       background-color: #ffff;
       /* position: absolute; */
+       
       
 
   }
@@ -259,47 +260,54 @@ float: left;
     text-decoration: none;
     border-color: rgba(27,31,35,.15);
 }
+
+
+
+
+
 .middle{
   
   padding-right: 16px!important;
     padding-left: 16px!important;
     
    height:100vh;
+   
   
    
    
    /* float: left;  */
-   
-       margin-left: 333px;
+      margin-left: 333px;
       margin-right: 330px;  
-      
+       
     margin-top: 16px!important;
-   
+   /* width: 100%; */
     
     
     
    
 }
  .main-middle{
-  /* max-width: 1400px; */
-  /* margin-right: auto!important;
-  display: flex!important;
-margin-left: auto!important;
+  max-width: 1400px; 
+   /* margin-right: auto!important;  */
+  /* display: flex!important; */
+/* margin-left: auto!important;
     flex: auto!important;
-    flex-direction: column!important; */
+    flex-direction: column!important;  */
     /* width: 567.5px; */
     /* display: flex!important;  */
-    height:630px;
+   
     /* padding-left: 16px;
       padding-right: 16px; */
       margin: 0 auto;
-      width: 800px;
+      
+      
+      
       
     
 } 
 
 .middle-upstate1{
-  width: 458.02px;
+  max-width: 800px;
   height: 172.67px;
    /* display: flex!important;   */
   padding-top: 16px!important;
@@ -307,6 +315,7 @@ margin-left: auto!important;
     align-items: baseline!important;
     border-bottom: 1px solid #e1e4e8!important;
     display: block;
+    margin: 0 auto;
       
 
 }
@@ -330,7 +339,7 @@ margin-left: auto!important;
 
 }
 .middle-upstate1-intro{
-  width: 410.02px;
+  
   height: 107px;
   padding: 16px!important;
   margin-top: 8px!important;
@@ -390,11 +399,12 @@ margin-left: auto!important;
  
 }
 .middle-protip{
-  width: 567.5px;
+  max-width: 800px;
   height: 52px;
   font-size: 12px!important;
   margin-top: 24px!important;
   color: #586069!important;
+  margin: 0 auto;
 }
 .Subscribe{
   display: inline-block!important;
@@ -403,18 +413,20 @@ margin-left: auto!important;
   margin-top: 8px!important;
   text-decoration: none;
   color: #586069!important;
+  margin: 0 auto;
   
 }
 .Subscribe :hover{
   color:  #0366d6;
 }
 .middle-bottom{
-  width: 800px;
+  max-width: 800px;
   height: 110px;
   /* display: flex;  */
   align-items: flex-start;
   color: rgb(88, 96, 105);
-   margin: 0 auto;
+  margin: 0 auto;
+   
   
 
    
@@ -429,6 +441,7 @@ margin-left: auto!important;
   margin-right: 32px; 
   fill: currentColor;
   float: left;
+  margin: 0 auto;
  
 }
 .middle-bottom-cat-date{
@@ -442,7 +455,7 @@ margin-left: auto!important;
   /* display: flex!important; */
  
    margin-top: -10px;
-   float: left;
+   float: right;
 }
 .middle-bottom-list1{
   list-style: none!important;
@@ -476,10 +489,10 @@ margin-left: auto!important;
 
 .right{
   width: 333px;
-  height: 100vh;
-      padding-top: 32px;
-      padding-right: 16px;
-      float: right;
+  height: 800px;
+    padding-top: 32px;
+    padding-right: 16px;
+    float: right;
       /* position: absolute; */
       /* line-height: 1.5px; */
       
