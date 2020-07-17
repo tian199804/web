@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#div1{
+   border: 2px solid black;
+   /* overflow: hidden; */
+   /* height: 200px;设置高度 */
+  
+
+
+}
+.div2{
+    width: 100px;
+    background-color: bisque;
+    height: 300px;
+     float: left; 
+    
+}
+.div3{
+    width:200px ;
+    background-color: aqua;
+    height: 200px;
+}
+.classfix::after{
+    content: " ";
+    clear: both;
+    display: block;
+
+
+}
+</style>
+<body>
+    <div id="div1" class='classfix'>
+        <div class="div2"></div>
+        <!-- <div style="clear: both;"></div> 清浮动-->
+    </div>
+    <div class="div3"></div>
+</body>
+</html>
