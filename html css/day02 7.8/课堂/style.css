@@ -1,0 +1,36 @@
+.container{
+    font-size: 200;
+    color: red;
+    /* text-align: center;文字居中 */
+    text-decoration: line-through;
+    /*  text-indent: 10px;
+    word-spacing: 50px;英文标准问题，单词之间的空白
+    letter-spacing:67px;字符之间的空白
+    text-decoration: line-through;文字划线
+    font-size: 19px; 
+    font-famliy: ;字体  */
+    border: 1px solid black;
+    border-style:dotted dotted solid solid;/* 上右下左 */
+    border-width: 20px;
+    border-color: aquamarine;
+    border-width: 89px;
+    
+
+    
+
+
+
+
+}
+.container1{
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    padding:20px 30px 20px 30px;/* 内边距 */
+    margin-left:50px ;/*左边 外边距  如果是负数就是往左边塌陷*/
+    margin-top: 50px;/* 上面外边距 */
+    margin: 40px 70px 80px 50px;/* 上右下左 margin top 高度塌陷 BFC特性 */
+
+
+
+}

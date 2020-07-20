@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //设置半径为20，计算圆的周长
+    var r=20;
+    
+    console.log(3.14*r*r);
+
+
+    //假设一共201个小时，请计算，一共经过了多少天多少小时？
+    
+    var z=210;
+    
+    console.log("经过了"+parseInt(z/24)+"天");
+    console.log(z%24+"小时");
+
+
+//假设a商品的价格为10.21元，b商品的价格为20.12元，请精确计算出他们的总价格。
+var a=10.21;
+var b=20.12;
+console.log((a*100+b*100)/100);
+
+//随机生成两个小数给变量x、y，然后显示这两个数中的最大值。
+// var c=12.31;
+// var d=23.35;
+// console.log(c>d?c:d);
+var c=Math.random();
+console.log(c);
+var d=Math.random();
+console.log(d);
+console.log(Math.max(c,d));
+
+//如果某年的年份值是4的倍数并且不是100的倍数，或者该年份值是400的倍数，那么这一年就是闰年，随机给一个年份，查看是否是闰年。
+var n=2200;
+
+console.log(n%100!==0 && n%4==0 || n%400==0);
+
+
+// var cssname = 'box'
+// var num = 1
+// var html = '<div class="box">这里是box1</div>'
+// 如何把变量html里面的class属性值box换成变量，如何把‘box1’里的1换成变量num
+ var cssname='box';
+ var num=1;
+ var html='<div class=\"'+cssname+"\">这里是box"+num+"</div>";
+ 
+ console.log(html);
+
+</script>
+</body>
+</html>
+

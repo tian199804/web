@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var a=1;
+        var str="我是string说:\"1234\"";
+        console.log(a);
+        console.log(0.1.toPrecision(15));
+        console.log(0.1.toPrecision(21));//精度丢失
+       var num=(0.1*10+0.2*10)*10;//解决精度丢失，把小数转换成整数再除以百/千...
+       console.log(null);
+       console.log(undefined);
+       var a=123;
+       var b=a.toString();//强制转换
+    //    string转number时如果不是纯数字，强转为NAN,字符串是空的，则为0，可以使用parseInt
+       var c= String(a);
+       console.log(typeof b);
+       var c ='123px';
+       var b=parseInt(c);//开头是数字可以解析出整数型数字
+       console.log(b);
+       //0x表示十六进制
+       //0开头表示8进制
+       //console.log(parseInt(a,8)转换成8进制，进行进制转换)
+       var a=NaN;
+    console.log(Boolean(a));
+    //对于Boolean（a）
+    //除了0和NaN,其余都是true
+    //除了空串，都是true
+    //null与undefined都是false
+    console.log(Boolean(a));
+    var n1=10;
+    var n2=20;
+    // var n=n1++;
+    // console.log("n="+n);
+    // console.log("n1="+n1);
+ n=++n1;
+ console.log("n="+n);
+ console.log("n1="+n1);
+// n=n2--;
+// console.log("n="+n);
+// console.log("n1="+n2);
+n=--n2;
+console.log("n="+n);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
