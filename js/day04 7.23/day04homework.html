@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 1. 编写函数，完成取余运算，使其结果和%的结果一致。
+//     function remainder(a,b){
+//        var count=0;
+//        var aa=a;
+//        while(a>b){
+//            a=a-b;
+//            count++;
+//        }
+//        console.log(count);
+//        c=aa-count*b;
+    
+//     }
+// remainder(26,5);
+
+
+
+
+// 2. 检查字符串是否含有大写字母，小写字母以及_,$,如果有，则返回时缺少了哪些字符。
+
+// function test(str){
+//     var count1=0;
+//         var count2=0;
+//         var count3=0;
+//     for(i=0;i<str.length;i++){
+//         if(str.charAt(i)>='A'&&str.charAt(i)<='Z'){
+//              count1++;
+//         }
+//         if(str.charAt(i)>='a'&&str.charAt(i)<='z'){
+//              count2++;
+           
+//          }
+//          if(str.charAt(i)==='_'||str.charAt(i)==='$'){
+//             count3++;
+//          }
+        
+// }
+// if(count1!==0){
+//     console.log("有大写字母")
+//     console.log("有"+count1+"个大写字母")
+//  }
+// if(count1!==0){
+//     console.log("有小写字母")
+//     console.log("有"+count2+"个小写字母")
+// }
+// if(count3!==0){
+//     console.log("有特殊符号")
+//     console.log("有"+count3+"个特殊符号" )
+// }
+        
+// }
+// test("we have A $。")
+
+
+
+
+
+// 3. 模拟一个场景，isen老师批改16份作业的场景。假设第一次提交就通过的概率是1/8，第二次提交通过的概率为85%，第三次都通过了。问，老师可能会批改多少次你们作业。
+// function exam(){
+    
+//     var firstcount=0;
+//     var count=0;
+//     var secondcount=0;
+//     for(var i=0;i<16;i++){
+//         var rand=Math.random();
+//         if(rand<=1/8) {
+//             firstcount++;
+//     } 
+//     }
+//         if(firstcount==16){
+//             count=16;
+//         }else {
+//             for(var j=0;j<16-firstcount;j++){
+//             var rand=Math.random(); 
+//             if(rand<=0.85) {
+//                 secondcount++;
+//             }
+//         }
+//         count=16+secondcount;
+// }
+//         if(16-firstcount-secondcount>0){
+//             count=16+secondcount+16-firstcount-secondcount;
+//         }
+//         console.log(count);
+
+//     }
+// exam();
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    //    var obj={
+    //         name:'Jane',
+    //         age:23,
+    //         height:155,
+    //         student:[
+    //             {
+    //                 name:'tom',
+    //                 age:16,
+                    
+    //             },
+    //             {
+    //                 name:'ru',
+    //                 age:17,
+    //             }
+    //         ]
+
+    //     }
+    //     console.log(obj);
+    //     delete obj.age;
+
+
+
+//作用域
+// var a = 123;
+// function main(){
+//     console.log(a);//123
+// }
+// main()
+
+
+// var a = 123;
+// function main(){
+
+//     console.log(a);//undefined
+//     var a = 1234;
+// }
+// main()
+// console.log(a);//123
+
+
+// var a = 123;
+// function main(){
+
+//     console.log(a);//123
+
+//     a = 1234;
+// }
+// main()
+// console.log(a);//1234
+
+
+// var a = 123;
+// function main(a){
+//     console.log(a);//undefined
+
+//     a = 1234;
+// }
+// main()
+// console.log(a);//123
+
+// var a = 123;
+// function main(a){
+//     console.log(a);//123
+
+//     a = 1234;
+// }
+// main(123);
+// console.log(a);//123
+
+
+// var foo='foo';
+// var myObject={
+//     foo:"bar",
+//     func:function(){
+//         var self =this;
+//         console.log("outer func: this.foo="+this.foo);
+//         console.log("outer func: self.foo="+self.foo);
+//         (function(){
+//             console.log("inner func:this.foo="+this.foo);
+//             console.log("inner func:self.foo="+self.foo);
+
+//         }())
+
+//     }
+// };
+// var func1=myObject.func;
+// myObject.func();
+
+
+// console.log("---------");
+// func1();
+//New的作用
+// 创建一个新对象
+// 将构造函数的作用域赋给新对象（this指向这个新对象）
+//执行构造函数中的代码，为这个新对象添加属性
+//返回新对象
+// function Person(name,age,student){
+//     this.name=name;
+//     this.age=age;
+//     this.student=student;
+
+// }
+// var p=new Person('tom','67','ttt');
+// console.log(p)
+
+function bar () {console.log(this)}
+bar();
+var bar = function () {console.log(this)}
+bar() //window
+    </script>
+</body>
+</html>

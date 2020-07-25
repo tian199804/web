@@ -1,0 +1,99 @@
+
+.title{
+    margin:0 auto;
+
+}
+.big-title{
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 35px;
+    font-weight:600;
+    color:rgb(103,105,108);
+    text-align: center;
+    
+}       
+.title-info1{
+    margin-top: 100px;
+    font-size: 20px;
+    color: rgb(103,105,108);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 75px;
+   
+
+}
+.title-info2{
+    
+    font-size: 20px;
+    color: rgb(103,105,108);
+    font-weight: 300;
+    text-align: center;
+
+}
+.container{
+    margin:0 auto;
+}
+.container-left{
+    float:left;
+    width: 350px;
+    margin: 80px 60px 58px;
+    
+
+}
+.img-box{
+    overflow: hidden;
+
+}
+.img-left{
+    width: 350px;
+    height: 300px;
+    
+}
+
+.img1-title{
+    font-size:20px;
+    color:rgb(103,105,108);
+    font-weight: 600;
+    margin-top: 43px;
+
+}
+.img1-info1{
+   margin-top: 22px;
+   font-size: 16px;
+    color: rgb(103,105,108);
+    font-weight: 300;
+}
+ .img1-info1-pic{
+    float: right;
+}
+.img1-info1-text{
+    float: left;
+    font-size: 16px;
+    color: rgb(103,105,108);
+    font-weight: 300; 
+     
+} 
+.img1-info2{
+    font-size: 16px;
+    color: rgb(103,105,108);
+    font-weight: 300;
+    text-align: center;
+    margin-top: 90px;
+}
+.img1-info3{
+    font-size: 20px;
+    font-weight: 300;
+    color: #949494;
+}
+.container-center{
+    float:left;
+    width: 350px;
+    margin: 80px 60px 58px;
+}
+.container-right{
+    float:left;
+    width: 350px;
+    margin: 80px 60px 58px;
+}
+.img-left:hover{
+    transform: scale(1.5);
+}
