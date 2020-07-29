@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .simg>img{
+        width: 400px;
+        height: 255px;
+        border: 1px solid  #ccc;
+        margin: 50px;
+        position: relative;
+        /* cursor:move; */
+    }
+    .bimg{
+        position: relative;
+        top: -300px;
+        left: 460px;
+         border: 1px solid #ccc;
+         width: 400px;
+         height: 300px;
+         overflow: hidden;
+         display: none;
+        }
+    #move{
+        position: absolute;
+        width: 160px;
+        height: 120px;
+        background-color: #ffffcc;
+        top: 0px;
+        left: 0px;
+        display: none;
+        border: 1px solid #ccc;
+        opacity: 0.5;
+    }
+    .bimg>img{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        
+        
+    }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="img">
+        <div class="simg"><!--小图片-->
+            <img src="../../../Downloads/u=3560813143,2230303835&fm=26&gp=0.jpg"/>
+            <div id="move"></div><!--放大区域-->
+        </div>
+        <div class="bimg"><!--大图片-->
+            <img src="../../../Downloads/u=3560813143,2230303835&fm=26&gp=0.jpg" />
+        </div>
+    </div>
+    
+    
+</body>
+
+<script src="../jquery3.5.js"></script>
+<script>//为小图片添加hover事件 鼠标移动到小图片上时，放大区域和大图片的div需要显示出来，反之隐藏
+        $(".simg").hover(function(){
+            $(".bimg").css("display","block");
+            $("#move").css("display","block");
+        },function(){
+            $(".bimg").css("display","none");
+            $("#move").css("display","none");
+        });
+        //需要为小图片的div添加一个鼠标移动时间
+        $(".simg").mousemove(function(event){
+            //需要获取鼠标移动是距离左边和顶端的距离
+            var x = event.pageX;
+            var y = event.pageY;
+            //需要计算放大区域的需要移动到的位置
+            var nx = x - $(".simg").offset().left-$("#move").width()/2;
+            var ny = y - $(".simg").offset().top-$("#move").height()/2;
+            //判断移动后是否已经超出的范围
+            if(nx < 0){ //左边超出
+                nx = 0;
+            }
+            if(nx > $(".simg").width()-$("#move").width()){//右边超出
+                nx = $(".simg").width()-$("#move").width();
+            }
+            if(ny < 0){ //顶端超出
+                ny = 0;
+            }
+            if(ny > $(".simg").height()-$("#move").height()){//底部超出
+                ny = $(".simg").height()-$("#move").height();
+            }
+            //设置放大区域的移动
+            $("#move").css({
+                left:nx+"px",
+                top:ny+"px"
+            });
+            //设置大图片的移动   大图片的移动方向与放大区域正好相反
+            $(".bimg>img").css({
+                left:-nx*$("#move").width()/$(".simg").width()+"px",
+                top:-ny*$("#move").height()/$(".simg").height()+"px"
+            });
+        })
+        </script>
+</html>

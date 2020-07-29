@@ -39,7 +39,7 @@
         font-size: 25px;
        }
       
-    .send-button{
+    #send-button{
         width: 161px;
         height:69px;
         background-color: crimson;
@@ -48,11 +48,7 @@
         bottom: 50px;
         color:ghostwhite;
         font-size: 25px;
-
-        
-
-
-    }
+}
     #showput1{
         display: none;
         font-size: 12px;
@@ -63,6 +59,7 @@
         font-size: 12px;
         color: crimson;
     } 
+
 </style>
 </head>
 <body>
@@ -73,45 +70,61 @@
     </div>
 
     <div class='myform'>
-    <span >Your name:</span> <input type="text"  class="myinput" placeholder="Your full name"  id="myinput1"  oninput="myFunction1()"><br>
+    <span >Your name:</span> <input type="text"  class="myinput" placeholder="Your full name"  id="myinput1"  ><br>
     <p id="showput1"  >用户名应为4到16位，包含字母，数字，下划线，减号</p>
-    <span style="margin-left: -47px;">Your password:</span> <input class="myinput" type="text"  id="myinput2"  oninput="myFunction2()">
+    <span style="margin-left: -47px;">Your password:</span> <input class="myinput" type="text"  id="myinput2"  >
     <p id="showput2"  >密码应为8到15位，包含字母，数字，下划线</p>
 </div>
 
 <div class="footer">
-    <button class="send-button">Send</button>
+    <button id="send-button">Send</button>
 </div>
 
 </div>
 
 </body>
 <script>
-    var ele=document.getElementById('myinput1');
+    var buttonEle = document.getElementById("send-button")
+
+
+
+    var nameele=document.getElementById('myinput1');
+    
+    nameele.onblur=myFunction1;
     function myFunction1(){
-        
-        if(ele.value.replace(/^[0-9a-zA-Z_-]{4,16}$/)){
+        var name=nameele.value;
+        var partten = /^[a-zA-Z0-9_-]{4,16}$/;
+        var flag1 = partten.test(name);
+        if(flag1){
         showput1.style.display="none";
      }else{
         showput1.style.display="block";
-        
+        buttonEle.style.backgroundColor='darkgray';
        }
        
     }
     
     
-
-    var ele2=document.getElementById('myinput2');
+   var passwordele=document.getElementById('myinput2');
+    passwordele.onblur=myFunction2;
     function myFunction2(){
-       if(ele2.value.replace(/^[0-9a-zA-Z_]{8,15}$/)){
+        var password=passwordele.value;
+        var partten=/^[0-9a-zA-Z_]{8,15}$/;//正则表达式
+        var flag2=partten.test(password);
+       if(flag2){
           
         showput2.style.display="none";
 
        }else{
         showput2.style.display="block";
+        buttonEle.style.backgroundColor='darkgray';
        }
        
     }
+    
+   
+
+
     
 </script>
 </html>
