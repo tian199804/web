@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button id="btn"> 添加</button>
+    <div id="content"></div>
+      
+</body>
+<script>
+     var arr=[];
+    var val=document.getElementsByTagName('input')[0];
+    var btn=document.getElementById('btn');  //添加 按钮
+    var content=document.getElementById('content');  //存放列表
+    btn.onclick=function () {  //添加事件
+        arr.push(val.value);
+        var str=''
+        for(var i=0;i<arr.length;i++){
+            str+=`<p>${arr[i]}   <button class="del">删除</button></p>`;   //模板字符串
+        }
+        val.value='';
+        content.innerHTML=str;
+        //删除，需要写在这，因为放在外层获取不到删除按钮
+        var del=document.getElementsByClassName('del');
+        for(var i=0;i<del.length;i++){
+            del[i].onclick=function () {  //删除点击的这一行
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+        }
+    }
+
+</script>
+</html>
+
